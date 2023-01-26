@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.principalLayout{
+    display: grid;
+    grid-template-areas:
+    "toolbar toolbar toolbar toolbar toolbar toolbar toolbar"
+    "navbar content content content content content content";
+    grid-template-rows: auto;
+}
+
+.toolbar{
+    grid-area: toolbar;
+    background-color: #005aab38; 
+    height: 100px;
+    align-items: center;
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color:#3eb9782e;
+    height: auto;
+    min-width: 300px;
+}
+
+.content{
+    grid-area: content;
+    height: auto
+}

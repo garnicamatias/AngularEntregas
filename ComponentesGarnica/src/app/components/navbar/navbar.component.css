@@ -1,0 +1,12 @@
+.navbarListContainer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 0;
+}
+
+.navbarListContainer{
+    padding-left: 20px;
+    font-size: 24px;
+}
