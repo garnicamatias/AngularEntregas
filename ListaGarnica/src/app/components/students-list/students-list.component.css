@@ -12,6 +12,8 @@ h1{
 
 .principalContainer{
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -20,7 +22,7 @@ h1{
     border: 1px black solid;
     height: 50px;
     align-items: center;
-    width: auto;
+    max-width: 1200px;
 }
 
 .studentContainer div, .titlesContainer div, ng-template{
