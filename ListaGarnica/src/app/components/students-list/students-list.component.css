@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+*{
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+.principalContainer{
+    border-radius: 10px;
+}
+
+
+.studentContainer, .titlesContainer{
+    display: flex;
+    border: 1px black solid;
+    height: 50px;
+    align-items: center;
+    width: auto;
+}
+
+.studentContainer div, .titlesContainer div, ng-template{
+    width: 200px;
+    height: 50px;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.titlesContainer, .titlesContainer div{
+    font-weight: bolder;
+    background-color: #ffe498;
+}
+
+.activeContainer{
+    background-color: #c7f6d4;
+}
+
+.nonActiveContainer{
+    background-color: #ffb6af;
+}
+
+.presencialStyle{
+    font-weight: bold;
+    color: blue;
+}
+
+.onlineStyle{
+    font-weight: bold;
+    color: green;
+}

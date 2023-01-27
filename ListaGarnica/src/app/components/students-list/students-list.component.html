@@ -1,0 +1,40 @@
+
+<h1>Lista de Estudiantes</h1>
+<div class="principalContainer">
+    <ul>
+        <li>
+            <div class="titlesContainer">
+                <div>Nombre</div>
+                <div>Apellido</div>
+                <div>Edad</div>
+                <div>Condición</div>
+                <div>Modalidad</div>
+                <div>Género</div>
+            </div>
+        </li>
+        <li *ngFor="let student of studentsList">
+            <div class="studentContainer">
+                <div>{{student.name}}</div>
+                <div>{{student.surname}}</div>
+                <div>{{student.age}}</div>
+                <div class='activeContainer' *ngIf="student.isActive">Activo</div>
+                <div class='nonActiveContainer' *ngIf="!student.isActive">Pasivo</div>
+                <div [ngClass]="student.courseModality === 'Presencial' ? 'presencialStyle' : 'onlineStyle'">{{student.courseModality}}</div>
+                <div [ngSwitch]="student.gender">
+                    <p *ngSwitchCase="'M'">
+                        Masculino
+                    </p>
+                    <p *ngSwitchCase="'F'">
+                        Femenino
+                    </p>
+                    <p *ngSwitchCase="'X'">
+                        No Binario
+                    </p>
+                    <p *ngSwitchDefault>
+                        No Declara
+                    </p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
